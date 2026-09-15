@@ -59,7 +59,3 @@ Separación de Responsabilidades: El enfoque trimodal (código para cómputo, LL
 Documentación de la API de Groq: https://console.groq.com/docs
 Llama 3 Architecture and Prompting Guide (Meta AI): https://www.llama.com/
 Google Colab Userdata API: https://colab.research.google.com/
-Preguntas para la Iteración y Análisis Crítico
-Una vez que apliques el commit de esta corrección, revisemos el diseño técnico del pipeline expuesto en tu proyecto:
-Mecanismo de Inferencia: Declaras que implementaste un fallback system en cascada para los modelos de Groq. Si un modelo falla por cuota (Rate Limit 429), ¿cuál es la degradación esperada en la calidad del reporte al pasar de un modelo de 70B parámetros (llama-3.3-70b-versatile) a uno de 8B (llama-3.1-8b-instant)? ¿Afecta esto la precisión del diagnóstico narrativo?
-Integración del asset visual: En la sección "Texto-Imagen", el prompt genera una imagen conceptual estética, pero no cuantitativa. Desde la perspectiva de arquitectura de datos, ¿por qué es crítico que las decisiones cuantitativas recaigan exclusivamente en Matplotlib y no en modelos generativos de imagen como DALL-E o Ideogram?
